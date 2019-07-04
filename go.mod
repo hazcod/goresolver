@@ -1,4 +1,4 @@
-module github.com/peterzen/goresolver
+module github.com/hazcod/goresolver
 
 require (
 	github.com/axw/gocov v0.0.0-20170322000131-3a69a0d2a4ef // indirect
