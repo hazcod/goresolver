@@ -4,6 +4,7 @@ import (
 	"errors"
 	"github.com/miekg/dns"
 	"time"
+	"strings"
 )
 
 const (
@@ -95,12 +96,12 @@ func queryDelegation(domainName string) (signedZone *SignedZone, err error) {
 
 // NewResolver initializes the package Resolver instance using the default
 // dnsClientConfig.
-func NewResolver(resolvConf string) (res *Resolver, err error) {
+func NewResolver(resolvConfText string) (res *Resolver, err error) {
 	resolver = &Resolver{}
 	resolver.dnsClient = &dns.Client{
 		ReadTimeout: DefaultTimeout,
 	}
-	resolver.dnsClientConfig, err = dns.ClientConfigFromFile(resolvConf)
+	resolver.dnsClientConfig, err = dns.ClientConfigFromReader(strings.NewReader(resolvConfText))
 	if err != nil {
 		return nil, err
 	}
