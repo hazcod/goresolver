@@ -1,9 +1,0 @@
-testnet-seed.stakey.org.	30	IN	AAAA	2a01:4f8:190:3371::2
-testnet-seed.stakey.org.	30	IN	AAAA	2a03:b0c0:2:d0::13dc:e001
-testnet-seed.stakey.org.	30	IN	AAAA	2a03:b0c0:3:d0::d14:d001
-testnet-seed.stakey.org.	30	IN	AAAA	2a03:b0c0:3:d0::d1b:7001
-testnet-seed.stakey.org.	30	IN	AAAA	2a03:b0c0:3:d0::d2a:6001
-testnet-seed.stakey.org.	30	IN	AAAA	2a03:b0c0:3:d0::2edf:d001
-testnet-seed.stakey.org.	30	IN	AAAA	2604:a880:800:10::325c:e001
-testnet-seed.stakey.org.	30	IN	AAAA	2a01:4f8:151:30c9::2
-testnet-seed.stakey.org.	30	IN	RRSIG	AAAA 10 3 30 20190403203227 20190304203227 6257 testnet-seed.stakey.org. dFJA6HaqJGJBnEvWTgHM4cpNOoyqT8rA5KGZ8P1pfbxnwoCnruEizYtUnAcOgT4j/LaU33ad5mvqxZ0JK05yl66p5auuIOk9dxRtg9tY7S+tCLqwfK/dcsn/mLCbpe9lORkGArJohUG5UVO321nUkLqgNfSVg957ZqrmY2tAMkI=
