@@ -52,6 +52,9 @@ func (authChain *AuthenticationChain) Populate(domainName string) error {
 // the DNSKEY and DS resource record sets, as well as correctness of each
 // delegation using the lower level methods in SignedZone.
 func (authChain *AuthenticationChain) Verify(answerRRset *RRSet) error {
+	if len(authChain.delegationChain) == 0 {
+		return return ErrDnskeyNotAvailable	
+	}
 
 	signedZone := authChain.delegationChain[0]
 	if !signedZone.checkHasDnskeys() {
