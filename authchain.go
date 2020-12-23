@@ -53,7 +53,7 @@ func (authChain *AuthenticationChain) Populate(domainName string) error {
 // delegation using the lower level methods in SignedZone.
 func (authChain *AuthenticationChain) Verify(answerRRset *RRSet) error {
 	if len(authChain.delegationChain) == 0 {
-		return return ErrDnskeyNotAvailable	
+		return ErrDnskeyNotAvailable	
 	}
 
 	signedZone := authChain.delegationChain[0]
